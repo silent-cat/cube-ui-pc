@@ -18,11 +18,11 @@
     <c-button type="danger">危险</c-button>
   </c-row>
   <c-row>
-    <c-button type="primary" circle>主要</c-button>
-    <c-button type="success" circle>成功</c-button>
-    <c-button type="info" circle>信息</c-button>
-    <c-button type="warning" circle>警告</c-button>
-    <c-button type="danger" circle>危险</c-button>
+    <c-button type="primary" round>主要</c-button>
+    <c-button type="success" round>成功</c-button>
+    <c-button type="info" round>信息</c-button>
+    <c-button type="warning" round>警告</c-button>
+    <c-button type="danger" round>危险</c-button>
   </c-row>
 ```
 
@@ -98,9 +98,9 @@
   <c-button size="small">小型按钮</c-button>
   <c-button size="middle">中型按钮</c-button>
   <c-button size="large">大型按钮</c-button>
-  <c-button size="small" circle>小型</c-button>
-  <c-button size="middle" circle>中型</c-button>
-  <c-button size="large" circle>大型</c-button>
+  <c-button size="small" round>小型</c-button>
+  <c-button size="middle" round>中型</c-button>
+  <c-button size="large" round>大型</c-button>
 ```
 
 ## 点击事件
@@ -127,7 +127,7 @@
 | 参数          | 说明             | 类型    | 可选值                                      | 默认值  |
 | :------------ | :--------------- | :------ | :------------------------------------------ | :------ |
 | type          | 类型             | string  | primary / success / info / warning / danger | primary |
-| circle        | 是否圆形按钮     | boolean | false / true                                | false   |
+| round        | 是否圆形按钮     | boolean | false / true                                | false   |
 | disabled      | 是否禁用按钮     | boolean | false / true                                | false   |
 | icon          | 是否有图标       | string  | -                                           | -       |
 | icon-position | 图标的位置       | string  | left / right                                | left    |

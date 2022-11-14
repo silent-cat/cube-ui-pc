@@ -8,11 +8,11 @@
       <c-button type="danger">危险</c-button>
     </c-row>
     <c-row>
-      <c-button type="primary" circle>主要</c-button>
-      <c-button type="success" circle>成功</c-button>
-      <c-button type="info" circle>信息</c-button>
-      <c-button type="warning" circle>警告</c-button>
-      <c-button type="danger" circle>危险</c-button>
+      <c-button type="primary" round>主要</c-button>
+      <c-button type="success" round>成功</c-button>
+      <c-button type="info" round>信息</c-button>
+      <c-button type="warning" round>警告</c-button>
+      <c-button type="danger" round>危险</c-button>
     </c-row>
   </div>
 </template>
