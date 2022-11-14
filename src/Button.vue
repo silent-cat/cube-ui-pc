@@ -1,7 +1,7 @@
 <template>
   <button
     class="cube-button"
-    :circle="circle"
+    :round="round"
     :class="{
       [`cube-button-${size}`]: true,
       [`cube-button-${type}`]: true,
@@ -9,10 +9,10 @@
     }"
     @click="$emit('click')"
   >
-    <c-icon v-if="icon && !loading" :name="icon" class="icon"></c-icon>
-    <c-icon v-if="loading" name="loading" class="cube-icon loading"></c-icon>
+    <c-icon v-if="icon && !loading" :name="icon" class="icon" :style="{ background: backgroundColor }"></c-icon>
+    <c-icon v-if="loading" name="loading" class="cube-icon loading" :style="{ background: backgroundColor }"></c-icon>
 
-    <div class="cube-content">
+    <div class="cube-content" :style="{ background: backgroundColor }">
       <slot />
     </div>
   </button>
@@ -20,6 +20,24 @@
 <script>
 import Icon from './Icon'
 export default {
+  computed: {
+    backgroundColor() {
+      switch (this.type) {
+        case 'success':
+          return 'rgb(99, 206, 99)'
+        case 'info':
+          return 'rgb(154, 158, 167)'
+        case 'warning':
+          return '#ffab85'
+        case 'info':
+          return '#ffab85'
+        case 'danger':
+          return 'rgb(245, 108, 108)'
+        default:
+          return '#409eff'
+      }
+    }
+  },
   components: {
     'c-icon': Icon
   },
@@ -33,7 +51,7 @@ export default {
       type: String,
       default: 'medium'
     },
-    circle: {
+    round: {
       type: Boolean,
       default: false
     },
@@ -94,11 +112,8 @@ $border-radius: 4px;
       box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
     }
   }
-  &[circle] {
-    width: $height * 1.2;
-    height: $height * 1.2;
-    border-radius: $height * 1.2/2;
-    padding: 0;
+  &[round] {
+    border-radius: $height / 2;
   }
   &:active {
     background-color: #56aaff;
@@ -118,11 +133,8 @@ $border-radius: 4px;
       box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15) inset,
         1px 1px 2px rgba(0, 0, 0, 0.3);
     }
-    &[circle] {
-      width: $small-height * 1.2;
-      height: $small-height * 1.2;
-      border-radius: $small-height * 1.2/2;
-      padding: 0;
+    &[round] {
+      border-radius: $small-height / 2;
     }
   }
   &-large {
@@ -134,11 +146,8 @@ $border-radius: 4px;
       box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15) inset,
         1px 1px 4px rgba(0, 0, 0, 0.3);
     }
-    &[circle] {
-      width: $large-height * 1.2;
-      height: $large-height * 1.2;
-      border-radius: $large-height * 1.2/2;
-      padding: 0;
+    &[round] {
+      border-radius: $large-height / 2;
     }
   }
   // type
@@ -193,6 +202,7 @@ $border-radius: 4px;
     }
     > .cube-content {
       order: 2;
+      //   background: $bg;
     }
   }
   &.cube-icon-right {
