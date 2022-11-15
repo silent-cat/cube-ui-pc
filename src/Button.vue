@@ -85,11 +85,9 @@ $font-color: #fff;
 $font-size: 16px;
 $border-style: solid;
 $border-color: #fff;
-$border-width: 0;
+$border-width: 2px;
 $border-radius: 4px;
 .cube-button {
-
-  
   margin: 2px 6px 2px 0px;
   display: inline-flex;
   align-items: center;
@@ -99,13 +97,12 @@ $border-radius: 4px;
   height: $height;
   background: $bg;
   padding: 0 1em;
-//   box-shadow: none;
   color: $font-color;
   border-style: $border-style;
   border-color: $border-color;
   border-width: $border-width;
   border-radius: $border-radius;
-//   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
   &[disabled] {
     cursor: not-allowed;
     opacity: 0.6;
@@ -159,7 +156,6 @@ $border-radius: 4px;
     }
     > .cube-content {
       order: 2;
-      //   background: $bg;
     }
   }
   &.cube-icon-right {

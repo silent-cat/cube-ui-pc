@@ -9,8 +9,8 @@
         <slot v-if="!enableHtml"></slot>
         <div v-else v-html="$slots.default[0]"></div>
       </div>
-      <div class="toast-line" ref="line"></div>
-      <span class="toast-close" @click="onClickClose">
+      <div class="toast-line" ref="line" v-if="closeButton.text"></div>
+      <span class="toast-close" @click="onClickClose" v-if="closeButton.text">
         {{ closeButton.text }}
       </span>
     </div>
@@ -33,7 +33,7 @@ export default {
       type: Object,
       default() {
         return {
-          text: '关闭',
+          text: '',
           callback: undefined
         }
       }
@@ -44,7 +44,7 @@ export default {
     },
     position: {
       type: String,
-      default: 'top',
+      default: 'center',
       validator(value) {
         return ['top', 'center', 'bottom'].indexOf(value) >= 0
       }
@@ -107,11 +107,11 @@ export default {
 <style lang="scss">
 $font-size: 14px;
 $toast-min-height: 40px;
-$toast-bg: rgba(0, 0, 0, 0.75);
+$toast-bg: #4d4d4e;
 $toast-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
 $toast-radius: 4px;
 $space-between: 16px;
-$animation-duration: 500ms;
+$animation-duration: 300ms;
 @keyframes slide-down {
   0% {
     opacity: 0;
@@ -150,11 +150,9 @@ $animation-duration: 500ms;
   transform: translateX(-50%);
 
   &.position-top {
-    top: 0;
+    top: 44px;
 
     .cube-toast-wrapper {
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
       animation: slide-down $animation-duration;
     }
   }
@@ -166,11 +164,9 @@ $animation-duration: 500ms;
   }
 
   &.position-bottom {
-    bottom: 2px;
+    bottom: 44px;
 
     .cube-toast-wrapper {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
       animation: slide-up $animation-duration;
     }
   }
@@ -186,7 +182,6 @@ $animation-duration: 500ms;
     color: white;
     display: flex;
     align-items: center;
-
     border: 2px solid #fff;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
     &:hover {
@@ -194,6 +189,10 @@ $animation-duration: 500ms;
     }
     .toast-message {
       padding: $space-between/2 0;
+      background: $toast-bg;
+      * {
+        background: $toast-bg;
+      }
     }
 
     .toast-line {
@@ -205,6 +204,7 @@ $animation-duration: 500ms;
     .toast-close {
       padding-left: $space-between;
       flex-shrink: 0;
+      background: $toast-bg;
     }
   }
 }
