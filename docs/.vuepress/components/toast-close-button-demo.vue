@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     showToast() {
-      this.$toast(`显示`, {
+      this.$toast(`内容`, {
         autoClose: false,
         closeButton: {
           text: '点击按钮触发回调函数',

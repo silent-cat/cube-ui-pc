@@ -41,8 +41,20 @@
         }
     </script>
 ```
+
+## 自定义颜色
+active-color 属性表示打开时的背景色，inactive-color 表示关闭时的背景色。
+<ClientOnly>
+<switch-color-demo></switch-color-demo>
+</ClientOnly>
+
+```vue
+    <c-switch v-model="checked" active-color="#ee0a24" inactive-color="#dcdee0"></c-switch>
+```
 ### Switch 属性
 | 参数              | 说明             | 类型    | 可选值                   | 默认值  |
 | :------------    | :--------------- | :------ | :---------- | :------ |
-| v-model        | 双向绑定             | boolean / string / boolean  | - | - |
+| v-model        | 双向绑定             | boolean / string / boolean  | - | false |
 | disabled         | 禁用             | boolean | - | false |
+| active-color     | 打开时的背景色             | string | - | #409eff |
+| inactive-color     | 关闭时的背景色             | string | - | #ffffff |

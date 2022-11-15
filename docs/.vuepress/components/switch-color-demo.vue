@@ -1,7 +1,6 @@
 <template>
   <div>
-    <c-switch v-model="value"></c-switch>
-    <p>switch value: {{value}}</p>
+    <c-switch v-model="value" active-color="#ee0a24" inactive-color="#dcdee0"></c-switch>
   </div>
 </template>
 
@@ -13,7 +12,7 @@ export default {
   },
   data() {
     return {
-      value: false
+      value: true
     }
   }
 }

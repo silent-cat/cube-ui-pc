@@ -1,6 +1,6 @@
 <template>
   <div>
-    <c-button @click="$toast(`显示toast`,{autoClose:false})">关闭自动关闭</c-button>
+    <c-button @click="showToast">关闭自动关闭</c-button>
   </div>
 </template>
 
@@ -16,9 +16,15 @@ export default {
     'c-toast': Toast
   },
   methods: {
-    showToast(position) {
-      this.$toast(`${position}显示`, {
-        position: position
+    showToast() {
+      this.$toast(`显示toast`, {
+        autoClose: false,
+        closeButton: {
+          text: '关闭',
+          callback: () => {
+            console.log('关闭成功')
+          }
+        }
       })
     }
   }
