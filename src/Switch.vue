@@ -1,8 +1,8 @@
 <template>
   <button
-    class="cube-switch"
-    :class="{ 'cube-switch-checked': value }"
+    :class="['cube-switch',{ 'cube-switch-checked': value}]"
     @click="toggle"
+    :style="{background:value?activeColor:inactiveColor}"
   >
     <span></span>
   </button>
@@ -14,11 +14,18 @@ export default {
     value: {
       type: Boolean,
       default: false
+    },
+    activeColor:{
+        type:String,
+        default:'#409eff'
+    },
+    inactiveColor:{
+        type:String,
+        default:'#fff'
     }
   },
   methods: {
     toggle() {
-      // this.$emit('update:value', !this.value)
       this.$emit('input', !this.value)
     }
   }
@@ -33,7 +40,7 @@ $bg: #fff;
   position: relative;
   height: $height;
   width: $width;
-  background-color: $bg;
+//   background-color: $bg;
   outline: none;
   border: 2px solid #ffffff;
   filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.25));
@@ -53,7 +60,7 @@ $bg: #fff;
   }
   //   开关打开
   &-checked {
-    background-color: #409eff;
+    // background-color: #409eff;
     & > span {
       left: 53px;
       box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.25);
