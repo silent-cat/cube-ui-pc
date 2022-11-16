@@ -50,10 +50,10 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .cube-collpase {
   //   border: 2px solid #fff;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+//   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   overflow: hidden;
 }

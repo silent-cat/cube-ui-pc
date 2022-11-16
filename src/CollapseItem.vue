@@ -48,7 +48,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .cube-collapse-item {
   color: #fff;
   > .cube-title {
@@ -80,6 +80,9 @@ export default {
   > .cube-content {
     padding: 16px;
     background-color: #333;
+    >p{
+        background: #333;
+    }
   }
 }
 </style>

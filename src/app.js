@@ -6,7 +6,7 @@ import Switch from './Switch'
 import Loading from './Loading'
 import Collapse from './Collapse'
 import CollapseItem from './CollapseItem'
-import Input from './Input'
+// import Input from './Input'
 import Col from './Col'
 import Row from './Row'
 import Tabs from './Tabs'
@@ -18,11 +18,11 @@ import Pagination from './Pagination'
 import Toast from './Toast'
 import plugin from './plugin'
 import Popover from './Popover'
-import Container from './Container'
-import Header from './Header'
-import Content from './Content'
-import Footer from './Footer'
-import Aside from './Aside'
+// import Container from './Container'
+// import Header from './Header'
+// import Content from './Content'
+// import Footer from './Footer'
+// import Aside from './Aside'
 
 Vue.component('c-button', Button)
 Vue.component('c-button-group', ButtonGroup)
@@ -31,7 +31,7 @@ Vue.component('c-switch', Switch)
 Vue.component('c-loading', Loading)
 Vue.component('c-collapse', Collapse)
 Vue.component('c-collapse-item', CollapseItem)
-Vue.component('c-input', Input)
+// Vue.component('c-input', Input)
 Vue.component('c-col', Col)
 Vue.component('c-row', Row)
 Vue.component('c-tabs', Tabs)
@@ -43,11 +43,11 @@ Vue.component('c-pagination', Pagination)
 Vue.component('c-toast',Toast)
 Vue.use(plugin)
 Vue.component('c-popover',Popover)
-Vue.component('c-container',Container)
-Vue.component('c-header',Header)
-Vue.component('c-content',Content)
-Vue.component('c-footer',Footer)
-Vue.component('c-aside',Aside)
+// Vue.component('c-container',Container)
+// Vue.component('c-header',Header)
+// Vue.component('c-content',Content)
+// Vue.component('c-footer',Footer)
+// Vue.component('c-aside',Aside)
 new Vue({
   el: '#app',
   created() {},
@@ -154,7 +154,7 @@ new Vue({
     },
 
     showToast() {
-      this.$toast(`<strong style="color:red">message11${parseInt(Math.random() * 100)}</strong>`, {
+      this.$toast(`<strong style="color:#fff">验证有误，请重新输入</strong>`, {
         enableHtml: true,
         position: 'top',
         autoClose:false,
@@ -165,6 +165,6 @@ new Vue({
           }
         },
       })
-    }
+    },
   }
 })

@@ -54,22 +54,22 @@ export default {
       this.$refs.popover.removeEventListener('mouseleave', this.close)
     }
   },
-  computed: {
-    openEvent() {
-      if (this.trigger === 'click') {
-        return 'click'
-      } else {
-        return 'mouseenter'
-      }
-    },
-    closeEvent() {
-      if (this.trigger === 'click') {
-        return 'click'
-      } else {
-        return 'mouseleave'
-      }
-    }
-  },
+//   computed: {
+//     openEvent() {
+//       if (this.trigger === 'click') {
+//         return 'click'
+//       } else {
+//         return 'mouseenter'
+//       }
+//     },
+//     closeEvent() {
+//       if (this.trigger === 'click') {
+//         return 'click'
+//       } else {
+//         return 'mouseleave'
+//       }
+//     }
+//   },
 
   methods: {
     positionContent() {
