@@ -40,33 +40,29 @@ $bg: #fff;
   position: relative;
   height: $height;
   width: $width;
-//   background-color: $bg;
   outline: none;
-  border: 2px solid #ffffff;
-  filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.25));
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25) inset;
+  border: .5px solid #f5f5f5;
+//   filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.25));
+//   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25) inset;
   border-radius: 18px;
   & > span {
-    width: 26px;
-    height: 26px;
-    border-radius: 13px;
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
     position: absolute;
-    left: 1px;
-    top: 1px;
+    left: 1.5px;
+    top: 1.5px;
     background: #ffffff;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 13px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.125);
+    border-radius: 14px;
     transition: all 250ms ease-in-out;
   }
-  //   开关打开
   &-checked {
-    // background-color: #409eff;
     & > span {
       left: 53px;
       box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.25);
     }
   }
-  //   禁用按钮
   &[disabled] {
     cursor: not-allowed;
     opacity: 0.6;

@@ -108,7 +108,7 @@ export default {
 $font-size: 14px;
 $toast-min-height: 40px;
 $toast-bg: #4d4d4e;
-$toast-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+// $toast-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
 $toast-radius: 4px;
 $space-between: 16px;
 $animation-duration: 300ms;
@@ -176,14 +176,14 @@ $animation-duration: 300ms;
     min-height: $toast-min-height;
     line-height: 1.8em;
     background: $toast-bg;
-    box-shadow: $toast-box-shadow;
+    // box-shadow: $toast-box-shadow;
     padding: 0 $space-between;
     border-radius: $toast-radius;
     color: white;
     display: flex;
     align-items: center;
-    border: 2px solid #fff;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    // border: 2px solid #fff;
+    // box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
     &:hover {
       cursor: pointer;
     }
