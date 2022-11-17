@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://silent-cat.github.io/cube-ui-pc/" target="_blank">
+  <a href="https://silent-cat.github.io/wy-ui-vue2/" target="_blank">
     <img width="100" src="https://z3.ax1x.com/2021/04/03/cnNHMT.png" alt="logo">
   </a>
 </p> 
-<h1 align="center">Cube UI</h1>
+<h1 align="center">物语UI</h1>
 <p align="center">
-  <a href="https://travis-ci.org/silent-cat/cube-ui-pc" target="_blank">
-    <img alt="Travis (.org)" src="https://travis-ci.org/silent-cat/cube-ui-pc.svg?branch=main" target="_blank">
+  <a href="https://travis-ci.org/silent-cat/wy-ui-vue2" target="_blank">
+    <img alt="Travis (.org)" src="https://travis-ci.org/silent-cat/wy-ui-vue2.svg?branch=main" target="_blank">
   </a>
 </p>
 
@@ -17,49 +17,49 @@
 ## 介绍
 一款基于 Vue2 实现的桌面端组件库
 ## 使用
-1. 安装 cube-ui-pc
+1. 安装 wy-ui-vue2
     ```
-   npm install cube-ui-pc
+   npm install wy-ui-vue2
     ```
     或
     ```
-   yarn add cube-ui-pc
+   yarn add wy-ui-vue2
     ```
-2. 引入 cube-ui-pc
+2. 引入 wy-ui-vue2
 
     main.js
     ```js
     import {
       Button,ButtonGroup,Switch,Collapse,CollapseItem,Icon,Row,Col,Pagination,Tabs,TabsHead,TabsBody,
       TabsItem,TabsPanel,Toast,plugin,Popover,Input,Container,Header,Content,Footer,Aside
-    }  from "cube-ui-pc"; // 引入组件
-    import "cube-ui-pc/dist/index.css"; // 引入样式
+    }  from "wy-ui-vue2"; // 引入组件
+    import "wy-ui-vue2/dist/index.css"; // 引入样式
     // 注册组件
-    Vue.component('c-button', Button)
-    Vue.component('c-button-group', ButtonGroup)
-    Vue.component('c-icon', Icon)
-    Vue.component('c-switch', Switch)
-    Vue.component('c-collapse', Collapse)
-    Vue.component('c-collapse-item', CollapseItem)
-    Vue.component('c-input', Input)
-    Vue.component('c-col', Col)
-    Vue.component('c-row', Row)
-    Vue.component('c-tabs', Tabs)
-    Vue.component('c-tabs-body', TabsBody)
-    Vue.component('c-tabs-head', TabsHead)
-    Vue.component('c-tabs-item', TabsItem)
-    Vue.component('c-tabs-panel', TabsPanel)
-    Vue.component('c-pagination', Pagination)
-    Vue.component('c-toast',Toast)
+    Vue.component('wy-button', Button)
+    Vue.component('wy-button-group', ButtonGroup)
+    Vue.component('wy-icon', Icon)
+    Vue.component('wy-switch', Switch)
+    Vue.component('wy-collapse', Collapse)
+    Vue.component('wy-collapse-item', CollapseItem)
+    Vue.component('wy-input', Input)
+    Vue.component('wy-col', Col)
+    Vue.component('wy-row', Row)
+    Vue.component('wy-tabs', Tabs)
+    Vue.component('wy-tabs-body', TabsBody)
+    Vue.component('wy-tabs-head', TabsHead)
+    Vue.component('wy-tabs-item', TabsItem)
+    Vue.component('wy-tabs-panel', TabsPanel)
+    Vue.component('wy-pagination', Pagination)
+    Vue.component('wy-toast',Toast)
     Vue.use(plugin)
-    Vue.component('c-popover',Popover)
-    Vue.component('c-container',Container)
-    Vue.component('c-header',Header)
-    Vue.component('c-content',Content)
-    Vue.component('c-footer',Footer)
-    Vue.component('c-aside',Aside)
+    Vue.component('wy-popover',Popover)
+    Vue.component('wy-container',Container)
+    Vue.component('wy-header',Header)
+    Vue.component('wy-content',Content)
+    Vue.component('wy-footer',Footer)
+    Vue.component('wy-aside',Aside)
     ```
 ## 文档
-[官方文档](https://silent-cat.github.io/cube-ui-pc/)
+[官方文档](https://silent-cat.github.io/wy-ui-vue2/)
 ## 提问
-[issues](https://github.com/silent-cat/cube-ui-pc/issues)
+[issues](https://github.com/silent-cat/wy-ui-vue2/issues)

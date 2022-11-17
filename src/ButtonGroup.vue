@@ -1,5 +1,5 @@
 <template>
-  <div class="cube-button-group"><slot /></div>
+  <div class="wy-button-group"><slot /></div>
 </template>
 <script>
 export default {
@@ -9,7 +9,7 @@ export default {
       let name = node.nodeName.toLowerCase()
       if (name !== 'button') {
         console.warn(
-          `c-button-group的子元素应该都是c-button,但是你写的是${name}`
+          `wy-button-group的子元素应该都是wy-button,但是你写的是${name}`
         )
       }
     }
@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 $border-radius: 4px;
-.cube-button-group {
+.wy-button-group {
   display: inline-flex;
   vertical-align: middle;
   > .button {

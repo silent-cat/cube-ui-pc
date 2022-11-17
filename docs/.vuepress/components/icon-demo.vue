@@ -1,8 +1,8 @@
 <template>
   <div>
-      <c-icon name="add"></c-icon>
-      <c-icon name="edit"></c-icon>
-      <c-icon name="delete"></c-icon>
+      <wy-icon name="add"></wy-icon>
+      <wy-icon name="edit"></wy-icon>
+      <wy-icon name="delete"></wy-icon>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
 import Icon from '../../../src/Icon'
 export default {
   components: {
-    'c-icon': Icon,
+    'wy-icon': Icon,
   }
 }
 </script>

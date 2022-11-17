@@ -1,15 +1,15 @@
 <template>
   <div>
-    <c-row>
-      <c-button icon="add" type="success">添加</c-button>
-      <c-button icon="edit">编辑</c-button>
-      <c-button icon="delete" type="danger">删除</c-button>
-    </c-row>
-    <c-row>
-      <c-button icon="add" type="success" icon-position="right">添加</c-button>
-      <c-button icon="edit" icon-position="right">编辑</c-button>
-      <c-button icon="delete" type="danger" icon-position="right">删除</c-button>
-    </c-row>
+    <wy-row>
+      <wy-button icon="add" type="success">添加</wy-button>
+      <wy-button icon="edit">编辑</wy-button>
+      <wy-button icon="delete" type="danger">删除</wy-button>
+    </wy-row>
+    <wy-row>
+      <wy-button icon="add" type="success" icon-position="right">添加</wy-button>
+      <wy-button icon="edit" icon-position="right">编辑</wy-button>
+      <wy-button icon="delete" type="danger" icon-position="right">删除</wy-button>
+    </wy-row>
   </div>
 </template>
 
@@ -18,8 +18,8 @@ import Button from '../../../src/Button'
 import Row from '../../../src/Row'
 export default {
   components: {
-    'c-button': Button,
-    'c-row': Row
+    'wy-button': Button,
+    'wy-row': Row
   }
 }
 </script>

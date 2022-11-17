@@ -1,12 +1,12 @@
 <template>
   <div>
-    <c-row>
-      <c-button type="primary" disabled>主要</c-button>
-      <c-button type="success" disabled>成功</c-button>
-      <c-button type="info" disabled>信息</c-button>
-      <c-button type="warning" disabled>警告</c-button>
-      <c-button type="danger" disabled>危险</c-button>
-    </c-row>
+    <wy-row>
+      <wy-button type="primary" disabled>主要</wy-button>
+      <wy-button type="success" disabled>成功</wy-button>
+      <wy-button type="info" disabled>信息</wy-button>
+      <wy-button type="warning" disabled>警告</wy-button>
+      <wy-button type="danger" disabled>危险</wy-button>
+    </wy-row>
   </div>
 </template>
 
@@ -15,8 +15,8 @@ import Button from '../../../src/Button'
 import Row from '../../../src/Row'
 export default {
   components: {
-    'c-button': Button,
-    'c-row': Row
+    'wy-button': Button,
+    'wy-row': Row
   },
   methods: {},
   data() {

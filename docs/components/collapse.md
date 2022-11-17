@@ -7,11 +7,11 @@
 </ClientOnly>
 
 ```vue
-    <c-collapse :selected.sync="selectedTab" accordion>
-      <c-collapse-item title="水果" name="fruits">Fruits</c-collapse-item>
-      <c-collapse-item title="蔬菜" name="vegetables">Vegetables</c-collapse-item>
-      <c-collapse-item title="牛奶" name="milk">Milk</c-collapse-item>
-    </c-collapse>
+    <wy-collapse :selected.sync="selectedTab" accordion>
+      <wy-collapse-item title="水果" name="fruits">Fruits</wy-collapse-item>
+      <wy-collapse-item title="蔬菜" name="vegetables">Vegetables</wy-collapse-item>
+      <wy-collapse-item title="牛奶" name="milk">Milk</wy-collapse-item>
+    </wy-collapse>
 
     <script>
     export default {
@@ -32,11 +32,11 @@
 </ClientOnly>
 
 ```vue
-    <c-collapse :selected.sync="selectedTab" single>
-      <c-collapse-item title="水果" name="1">Fruits</c-collapse-item>
-      <c-collapse-item title="蔬菜" name="2">Vegetables</c-collapse-item>
-      <c-collapse-item title="奶类" name="3">Milk</c-collapse-item>
-    </c-collapse>
+    <wy-collapse :selected.sync="selectedTab" single>
+      <wy-collapse-item title="水果" name="1">Fruits</wy-collapse-item>
+      <wy-collapse-item title="蔬菜" name="2">Vegetables</wy-collapse-item>
+      <wy-collapse-item title="奶类" name="3">Milk</wy-collapse-item>
+    </wy-collapse>
 
     <script>
     export default {

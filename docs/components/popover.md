@@ -6,24 +6,24 @@
 </ClientOnly>
 
 ```vue
-  <c-popover position="left">
+  <wy-popover position="left">
     <template slot="content">
       popover 中的内容
     </template>
-    <c-button>左方显示内容</c-button>
-  </c-popover>
-  <c-popover>
+    <wy-button>左方显示内容</wy-button>
+  </wy-popover>
+  <wy-popover>
     <template slot="content">
       popover 中的内容
     </template>
-    <c-button>点击显示</c-button>
-  </c-popover>
-  <c-popover trigger="hover">
+    <wy-button>点击显示</wy-button>
+  </wy-popover>
+  <wy-popover trigger="hover">
     <template slot="content">
       popover 中的内容
     </template>
-    <c-button>hover 显示内容</c-button>
-  </c-popover>
+    <wy-button>hover 显示内容</wy-button>
+  </wy-popover>
 ```
 
 ### Popover 属性

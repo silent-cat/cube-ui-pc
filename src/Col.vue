@@ -61,9 +61,9 @@
         return [
           ...createClasses({span, offset}),
           ...createClasses(ipad, 'ipad-'),
-          ...createClasses(narrowPc, 'narrow-pc-'),
-          ...createClasses(pc, 'pc-'),
-          ...createClasses(widePc, 'wide-pc-'),
+          ...createClasses(narrowPc, 'narrow-pwy-'),
+          ...createClasses(pc, 'pwy-'),
+          ...createClasses(widePc, 'wide-pwy-'),
         ]
       },
     }
@@ -100,13 +100,13 @@
       }
     }
     @media (min-width: 769px) {
-      $class-prefix: col-narrow-pc-;
+      $class-prefix: col-narrow-pwy-;
       @for $n from 1 through 24 {
         &.#{$class-prefix}#{$n} {
           width: ($n / 24) * 100%;
         }
       }
-      $class-prefix: offset-narrow-pc-;
+      $class-prefix: offset-narrow-pwy-;
       @for $n from 1 through 24 {
         &.#{$class-prefix}#{$n} {
           margin-left: ($n / 24) * 100%;
@@ -114,13 +114,13 @@
       }
     }
     @media (min-width: 993px) {
-      $class-prefix: col-pc-;
+      $class-prefix: col-pwy-;
       @for $n from 1 through 24 {
         &.#{$class-prefix}#{$n} {
           width: ($n / 24) * 100%;
         }
       }
-      $class-prefix: offset-pc-;
+      $class-prefix: offset-pwy-;
       @for $n from 1 through 24 {
         &.#{$class-prefix}#{$n} {
           margin-left: ($n / 24) * 100%;
@@ -128,13 +128,13 @@
       }
     }
     @media (min-width: 1201px) {
-      $class-prefix: col-wide-pc-;
+      $class-prefix: col-wide-pwy-;
       @for $n from 1 through 24 {
         &.#{$class-prefix}#{$n} {
           width: ($n / 24) * 100%;
         }
       }
-      $class-prefix: offset-wide-pc-;
+      $class-prefix: offset-wide-pwy-;
       @for $n from 1 through 24 {
         &.#{$class-prefix}#{$n} {
           margin-left: ($n / 24) * 100%;

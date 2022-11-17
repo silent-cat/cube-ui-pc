@@ -1,18 +1,18 @@
 <template>
   <button
-    class="cube-button"
+    class="wy-button"
     :round="round"
     :class="{
-      [`cube-button-${size}`]: true,
-      [`cube-icon-${iconPosition}`]: true
+      [`wy-button-${size}`]: true,
+      [`wy-icon-${iconPosition}`]: true
     }"
     :style="{ background: backgroundColor }"
     @click="$emit('click')"
   >
-    <c-icon v-if="icon && !loading" :name="icon" class="icon" :style="{ background: backgroundColor }"></c-icon>
-    <c-icon v-if="loading" name="loading" class="cube-icon loading" :style="{ background: backgroundColor }"></c-icon>
+    <wy-icon v-if="icon && !loading" :name="icon" class="icon" :style="{ background: backgroundColor }"></wy-icon>
+    <wy-icon v-if="loading" name="loading" class="wy-icon loading" :style="{ background: backgroundColor }"></wy-icon>
 
-    <div class="cube-content" :style="{ background: backgroundColor }">
+    <div class="wy-content" :style="{ background: backgroundColor }">
       <slot />
     </div>
   </button>
@@ -39,7 +39,7 @@ export default {
     }
   },
   components: {
-    'c-icon': Icon
+    'wy-icon': Icon
   },
   props: {
     icon: {},
@@ -87,7 +87,7 @@ $border-style: solid;
 $border-color: #fff;
 $border-width: 0;
 $border-radius: 4px;
-.cube-button {
+.wy-button {
   margin: 2px 6px 2px 0px;
   display: inline-flex;
   align-items: center;
@@ -149,21 +149,21 @@ $border-radius: 4px;
 //   &-danger {
 //     background-color: rgb(245, 108, 108);
 //   } // 控制图标位置的类
-  &.cube-icon-left {
-    > .cube-icon {
+  &.wy-icon-left {
+    > .wy-icon {
       order: 1;
       margin-right: 0.4em;
     }
-    > .cube-content {
+    > .wy-content {
       order: 2;
     }
   }
-  &.cube-icon-right {
-    > .cube-icon {
+  &.wy-icon-right {
+    > .wy-icon {
       order: 2;
       margin-left: 0.4em;
     }
-    > .cube-content {
+    > .wy-content {
       order: 1;
     }
   }

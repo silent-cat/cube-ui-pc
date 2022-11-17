@@ -1,10 +1,10 @@
 <template>
   <div
-    class="cube-toast-wrapper-center"
+    class="wy-toast-wrapper-center"
     :class="toastClasses"
     ref="toastWrapper"
   >
-    <div class="cube-toast-wrapper" ref="wrapper">
+    <div class="wy-toast-wrapper" ref="wrapper">
       <div class="toast-message">
         <slot v-if="!enableHtml"></slot>
         <div v-else v-html="$slots.default[0]"></div>
@@ -143,7 +143,7 @@ $animation-duration: 300ms;
   }
 }
 
-.cube-toast-wrapper-center {
+.wy-toast-wrapper-center {
   z-index: 20;
   position: fixed;
   left: 50%;
@@ -152,7 +152,7 @@ $animation-duration: 300ms;
   &.position-top {
     top: 44px;
 
-    .cube-toast-wrapper {
+    .wy-toast-wrapper {
       animation: slide-down $animation-duration;
     }
   }
@@ -166,12 +166,12 @@ $animation-duration: 300ms;
   &.position-bottom {
     bottom: 44px;
 
-    .cube-toast-wrapper {
+    .wy-toast-wrapper {
       animation: slide-up $animation-duration;
     }
   }
 
-  .cube-toast-wrapper {
+  .wy-toast-wrapper {
     font-size: $font-size;
     min-height: $toast-min-height;
     line-height: 1.8em;

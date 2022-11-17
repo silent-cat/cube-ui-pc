@@ -1,5 +1,5 @@
 <template>
-  <svg class="cube-icon" aria-hidden="true" v-if="name">
+  <svg class="wy-icon" aria-hidden="true" v-if="name">
     <use :xlink:href="`#icon-${name}`"></use>
   </svg>
 </template>
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.cube-icon {
+.wy-icon {
   width: 1.5rem;
   height: 1.5rem;
   vertical-align: middle;

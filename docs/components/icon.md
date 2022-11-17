@@ -9,9 +9,9 @@
 </ClientOnly>
 
 ```vue
-    <c-icon name="add"></c-icon>
-    <c-icon name="edit"></c-icon>
-    <c-icon name="delete"></c-icon>
+    <wy-icon name="add"></wy-icon>
+    <wy-icon name="edit"></wy-icon>
+    <wy-icon name="delete"></wy-icon>
 ```
 
 ## Button使用
@@ -21,16 +21,16 @@
 </ClientOnly>
 
 ```vue
-    <c-row>
-      <c-button icon="add" type="success">添加</c-button>
-      <c-button icon="edit">编辑</c-button>
-      <c-button icon="delete" type="danger">删除</c-button>
-    </c-row>
-    <c-row>
-      <c-button icon="add" type="success" icon-position="right">添加</c-button>
-      <c-button icon="edit" icon-position="right">编辑</c-button>
-      <c-button icon="delete" type="danger" icon-position="right">删除</c-button>
-    </c-row>
+    <wy-row>
+      <wy-button icon="add" type="success">添加</wy-button>
+      <wy-button icon="edit">编辑</wy-button>
+      <wy-button icon="delete" type="danger">删除</wy-button>
+    </wy-row>
+    <wy-row>
+      <wy-button icon="add" type="success" icon-position="right">添加</wy-button>
+      <wy-button icon="edit" icon-position="right">编辑</wy-button>
+      <wy-button icon="delete" type="danger" icon-position="right">删除</wy-button>
+    </wy-row>
 ```
 
 ### Icon 属性

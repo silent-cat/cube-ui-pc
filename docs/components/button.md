@@ -10,20 +10,20 @@
 </ClientOnly>
 
 ```vue
-  <c-row>
-    <c-button type="primary">主要</c-button>
-    <c-button type="success">成功</c-button>
-    <c-button type="info">信息</c-button>
-    <c-button type="warning">警告</c-button>
-    <c-button type="danger">危险</c-button>
-  </c-row>
-  <c-row>
-    <c-button type="primary" round>主要</c-button>
-    <c-button type="success" round>成功</c-button>
-    <c-button type="info" round>信息</c-button>
-    <c-button type="warning" round>警告</c-button>
-    <c-button type="danger" round>危险</c-button>
-  </c-row>
+  <wy-row>
+    <wy-button type="primary">主要</wy-button>
+    <wy-button type="success">成功</wy-button>
+    <wy-button type="info">信息</wy-button>
+    <wy-button type="warning">警告</wy-button>
+    <wy-button type="danger">危险</wy-button>
+  </wy-row>
+  <wy-row>
+    <wy-button type="primary" round>主要</wy-button>
+    <wy-button type="success" round>成功</wy-button>
+    <wy-button type="info" round>信息</wy-button>
+    <wy-button type="warning" round>警告</wy-button>
+    <wy-button type="danger" round>危险</wy-button>
+  </wy-row>
 ```
 
 ## 禁用状态
@@ -34,13 +34,13 @@
 </ClientOnly>
 
 ```vue
-  <c-row>
-    <c-button type="primary" disabled>主要</c-button>
-    <c-button type="success" disabled>成功</c-button>
-    <c-button type="info" disabled>信息</c-button>
-    <c-button type="warning" disabled>警告</c-button>
-    <c-button type="danger" disabled>危险</c-button>
-  </c-row>
+  <wy-row>
+    <wy-button type="primary" disabled>主要</wy-button>
+    <wy-button type="success" disabled>成功</wy-button>
+    <wy-button type="info" disabled>信息</wy-button>
+    <wy-button type="warning" disabled>警告</wy-button>
+    <wy-button type="danger" disabled>危险</wy-button>
+  </wy-row>
 ```
 ## 带图标的按钮
 
@@ -50,16 +50,16 @@
 </ClientOnly>
 
 ```vue
-  <c-row>
-    <c-button icon="add" type="success">添加</c-button>
-    <c-button icon="edit">编辑</c-button>
-    <c-button icon="delete" type="danger">删除</c-button>
-  </c-row>
-  <c-row>
-    <c-button icon="add" type="success" icon-position="right">添加</c-button>
-    <c-button icon="edit" icon-position="right">编辑</c-button>
-    <c-button icon="delete" type="danger" icon-position="right">删除</c-button>
-  </c-row>
+  <wy-row>
+    <wy-button icon="add" type="success">添加</wy-button>
+    <wy-button icon="edit">编辑</wy-button>
+    <wy-button icon="delete" type="danger">删除</wy-button>
+  </wy-row>
+  <wy-row>
+    <wy-button icon="add" type="success" icon-position="right">添加</wy-button>
+    <wy-button icon="edit" icon-position="right">编辑</wy-button>
+    <wy-button icon="delete" type="danger" icon-position="right">删除</wy-button>
+  </wy-row>
 ```
 
 ## 按钮组
@@ -70,10 +70,10 @@
 </ClientOnly>
 
 ```vue
-  <c-button-group>
-    <c-button icon="left">上一页</c-button>
-    <c-button icon="right" icon-position="right">下一页</c-button>
-  </c-button-group>
+  <wy-button-group>
+    <wy-button icon="left">上一页</wy-button>
+    <wy-button icon="right" icon-position="right">下一页</wy-button>
+  </wy-button-group>
 ```
 
 ## 加载按钮
@@ -84,7 +84,7 @@
 </ClientOnly>
 
 ```vue
-  <c-button type="primary" loading>加载中</c-button>
+  <wy-button type="primary" loading>加载中</wy-button>
 ```
 
 ## 不同尺寸
@@ -95,12 +95,12 @@
 </ClientOnly>
 
 ```vue
-  <c-button size="small">小型按钮</c-button>
-  <c-button size="middle">中型按钮</c-button>
-  <c-button size="large">大型按钮</c-button>
-  <c-button size="small" round>小型</c-button>
-  <c-button size="middle" round>中型</c-button>
-  <c-button size="large" round>大型</c-button>
+  <wy-button size="small">小型按钮</wy-button>
+  <wy-button size="middle">中型按钮</wy-button>
+  <wy-button size="large">大型按钮</wy-button>
+  <wy-button size="small" round>小型</wy-button>
+  <wy-button size="middle" round>中型</wy-button>
+  <wy-button size="large" round>大型</wy-button>
 ```
 
 ## 点击事件
@@ -111,7 +111,7 @@
 </ClientOnly>
 
 ```vue
-  <c-button @click="clickEvent">点击</c-button>
+  <wy-button @click="clickEvent">点击</wy-button>
   <script>
   export default {
     methods: {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <c-button @click="showToast">关闭自动关闭</c-button>
+    <wy-button @click="showToast">关闭自动关闭</wy-button>
   </div>
 </template>
 
@@ -12,8 +12,8 @@ import plugin from '../../../src/plugin'
 Vue.use(plugin)
 export default {
   components: {
-    'c-button': Button,
-    'c-toast': Toast
+    'wy-button': Button,
+    'wy-toast': Toast
   },
   methods: {
     showToast() {

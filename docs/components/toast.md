@@ -10,7 +10,7 @@ toast 两秒后自动消失
 </ClientOnly>
 
 ```vue
-<c-button @click="$toast(`显示toast`)">显示toast</c-button>
+<wy-button @click="$toast(`显示toast`)">显示toast</wy-button>
 ```
 
 ## 关闭自动关闭并设定按钮的文本与回调
@@ -22,7 +22,7 @@ toast 默认是自动关闭的，启动 autoClose 为 true 关闭自动关闭，
 </ClientOnly>
 
 ```vue
-<c-button @click="showToast">关闭自动关闭</c-button>
+<wy-button @click="showToast">关闭自动关闭</wy-button>
 
 <script>
 export default {
@@ -51,7 +51,7 @@ export default {
 </ClientOnly>
 
 ```vue
-<c-button @click="$toast(`<h3>显示toast</h3>`, { enableHtml: true })">支持HTML</c-button>
+<wy-button @click="$toast(`<h3>显示toast</h3>`, { enableHtml: true })">支持HTML</wy-button>
 ```
 
 ## 不同位置
@@ -62,9 +62,9 @@ export default {
 </ClientOnly>
 
 ```vue
-<c-button @click="showToast('top')">上方显示</c-button>
-<c-button @click="showToast('center')">中间显示</c-button>
-<c-button @click="showToast('bottom')">下方显示</c-button>
+<wy-button @click="showToast('top')">上方显示</wy-button>
+<wy-button @click="showToast('center')">中间显示</wy-button>
+<wy-button @click="showToast('bottom')">下方显示</wy-button>
 
 <script>
 export default {

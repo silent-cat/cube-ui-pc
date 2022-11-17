@@ -1,14 +1,14 @@
 <template>
-  <div class="cube-popover" ref="popover">
+  <div class="wy-popover" ref="popover">
     <div
-      class="cube-popover-content-wrapper"
+      class="wy-popover-content-wrapper"
       ref="contentWrapper"
       v-if="visible"
-      :class="{ [`cube-position-${position}`]: true }"
+      :class="{ [`wy-position-${position}`]: true }"
     >
       <slot name="content" :close="close"></slot>
     </div>
-    <span ref="triggerWrapper" class="cube-popover-trigger-wrapper">
+    <span ref="triggerWrapper" class="wy-popover-trigger-wrapper">
       <slot></slot>
     </span>
   </div>
@@ -137,13 +137,13 @@ export default {
 <style lang="scss" scoped>
 $border-color: #fff;
 $border-radius: 4px;
-.cube-popover {
+.wy-popover {
   display: inline-block;
   vertical-align: top;
   position: relative;
 }
 
-.cube-popover-content-wrapper {
+.wy-popover-content-wrapper {
   position: absolute;
   border: 1px solid $border-color;
   border-radius: $border-radius;
@@ -163,7 +163,7 @@ $border-radius: 4px;
     position: absolute;
   }
 
-  &.cube-position-top {
+  &.wy-position-top {
     transform: translateY(-100%);
     margin-top: -10px;
 
@@ -185,7 +185,7 @@ $border-radius: 4px;
     }
   }
 
-  &.cube-position-bottom {
+  &.wy-position-bottom {
     margin-top: 10px;
 
     &::before,
@@ -206,7 +206,7 @@ $border-radius: 4px;
     }
   }
 
-  &.cube-position-left {
+  &.wy-position-left {
     transform: translateX(-100%);
     margin-left: -10px;
 
@@ -229,7 +229,7 @@ $border-radius: 4px;
     }
   }
 
-  &.cube-position-right {
+  &.wy-position-right {
     margin-left: 10px;
 
     &::before,
@@ -252,7 +252,7 @@ $border-radius: 4px;
   }
 }
 
-.cube-popover-trigger-wrapper {
+.wy-popover-trigger-wrapper {
   display: inline-block;
 }
 </style>

@@ -9,24 +9,24 @@
 
 ```vue
   <div class="grid-wrapper">
-    <c-row class="row">
-      <c-col class="item" span="24">col-24</c-col>
-    </c-row>
-    <c-row>
-      <c-col class="item" span="12">col-12</c-col>
-      <c-col class="item" span="12">col-12</c-col>
-    </c-row>
-    <c-row class="row">
-      <c-col class="item" span="8">col-8</c-col>
-      <c-col class="item" span="8">col-8</c-col>
-      <c-col class="item" span="8">col-8</c-col>
-    </c-row>
-    <c-row class="row">
-      <c-col class="item" span="6">col-6</c-col>
-      <c-col class="item" span="6">col-6</c-col>
-      <c-col class="item" span="6">col-6</c-col>
-      <c-col class="item" span="6">col-6</c-col>
-    </c-row>
+    <wy-row class="row">
+      <wy-col class="item" span="24">col-24</wy-col>
+    </wy-row>
+    <wy-row>
+      <wy-col class="item" span="12">col-12</wy-col>
+      <wy-col class="item" span="12">col-12</wy-col>
+    </wy-row>
+    <wy-row class="row">
+      <wy-col class="item" span="8">col-8</wy-col>
+      <wy-col class="item" span="8">col-8</wy-col>
+      <wy-col class="item" span="8">col-8</wy-col>
+    </wy-row>
+    <wy-row class="row">
+      <wy-col class="item" span="6">col-6</wy-col>
+      <wy-col class="item" span="6">col-6</wy-col>
+      <wy-col class="item" span="6">col-6</wy-col>
+      <wy-col class="item" span="6">col-6</wy-col>
+    </wy-row>
   </div>
 
   <style lang="scss" scoped>
@@ -52,21 +52,21 @@
 
 ```vue
   <div class="gutter-wrapper">
-    <c-row gutter="30">
-      <c-col class="item" span="8"> <span> col-8; gutter-30;</span> </c-col>
-      <c-col class="item" span="8"> <span> col-8; gutter-30;</span> </c-col>
-      <c-col class="item" span="8"> <span> col-8; gutter-30;</span> </c-col>
-    </c-row>
-    <c-row gutter="20">
-      <c-col class="item" span="8"> <span> col-8; gutter-20;</span> </c-col>
-      <c-col class="item" span="8"> <span> col-8; gutter-20;</span> </c-col>
-      <c-col class="item" span="8"> <span> col-8; gutter-20;</span> </c-col>
-    </c-row>
-    <c-row gutter="10">
-      <c-col class="item" span="8"> <span> col-8; gutter-10;</span> </c-col>
-      <c-col class="item" span="8"> <span> col-8; gutter-10;</span> </c-col>
-      <c-col class="item" span="8"> <span> col-8; gutter-10;</span> </c-col>
-    </c-row>
+    <wy-row gutter="30">
+      <wy-col class="item" span="8"> <span> col-8; gutter-30;</span> </wy-col>
+      <wy-col class="item" span="8"> <span> col-8; gutter-30;</span> </wy-col>
+      <wy-col class="item" span="8"> <span> col-8; gutter-30;</span> </wy-col>
+    </wy-row>
+    <wy-row gutter="20">
+      <wy-col class="item" span="8"> <span> col-8; gutter-20;</span> </wy-col>
+      <wy-col class="item" span="8"> <span> col-8; gutter-20;</span> </wy-col>
+      <wy-col class="item" span="8"> <span> col-8; gutter-20;</span> </wy-col>
+    </wy-row>
+    <wy-row gutter="10">
+      <wy-col class="item" span="8"> <span> col-8; gutter-10;</span> </wy-col>
+      <wy-col class="item" span="8"> <span> col-8; gutter-10;</span> </wy-col>
+      <wy-col class="item" span="8"> <span> col-8; gutter-10;</span> </wy-col>
+    </wy-row>
   </div>
 
   <style lang="scss" scoped>
@@ -86,18 +86,18 @@
 
 ```vue
   <div class="align-wrapper">
-    <c-row class="row" align="left">
-      <c-col class="item" span="8">left</c-col>
-      <c-col class="item" span="8">left</c-col>
-    </c-row>
-    <c-row class="row" align="center">
-      <c-col class="item" span="8">center</c-col>
-      <c-col class="item" span="8">center</c-col>
-    </c-row>
-    <c-row class="row" align="right">
-      <c-col class="item" span="8">right</c-col>
-      <c-col class="item" span="8">right</c-col>
-    </c-row>
+    <wy-row class="row" align="left">
+      <wy-col class="item" span="8">left</wy-col>
+      <wy-col class="item" span="8">left</wy-col>
+    </wy-row>
+    <wy-row class="row" align="center">
+      <wy-col class="item" span="8">center</wy-col>
+      <wy-col class="item" span="8">center</wy-col>
+    </wy-row>
+    <wy-row class="row" align="right">
+      <wy-col class="item" span="8">right</wy-col>
+      <wy-col class="item" span="8">right</wy-col>
+    </wy-row>
   </div>
 
   <style lang="scss" scoped>
@@ -120,21 +120,21 @@
 </ClientOnly>
 ```vue
   <div class="offset-wrapper">
-    <c-row class="row">
-      <c-col class="item" span="8"> <span>col-8</span> </c-col>
-      <c-col class="item" span="8"> <span>col-8</span> </c-col>
-      <c-col class="item" span="4" offset="4"> <span>col-4</span> </c-col>
-    </c-row>
-    <c-row class="row">
-      <c-col class="item" span="8"> <span>col-8</span> </c-col>
-      <c-col class="item" span="5" offset="3"> <span>col-5</span> </c-col>
-      <c-col class="item" span="4" offset="4"> <span>col-4</span> </c-col>
-    </c-row>
-    <c-row class="row">
-      <c-col class="item" span="2" offset="6"> <span>col-2</span> </c-col>
-      <c-col class="item" span="5" offset="3"> <span>col-5</span> </c-col>
-      <c-col class="item" span="4" offset="4"> <span>col-4</span> </c-col>
-    </c-row>
+    <wy-row class="row">
+      <wy-col class="item" span="8"> <span>col-8</span> </wy-col>
+      <wy-col class="item" span="8"> <span>col-8</span> </wy-col>
+      <wy-col class="item" span="4" offset="4"> <span>col-4</span> </wy-col>
+    </wy-row>
+    <wy-row class="row">
+      <wy-col class="item" span="8"> <span>col-8</span> </wy-col>
+      <wy-col class="item" span="5" offset="3"> <span>col-5</span> </wy-col>
+      <wy-col class="item" span="4" offset="4"> <span>col-4</span> </wy-col>
+    </wy-row>
+    <wy-row class="row">
+      <wy-col class="item" span="2" offset="6"> <span>col-2</span> </wy-col>
+      <wy-col class="item" span="5" offset="3"> <span>col-5</span> </wy-col>
+      <wy-col class="item" span="4" offset="4"> <span>col-4</span> </wy-col>
+    </wy-row>
   </div>
 
   <style lang="scss" scoped>

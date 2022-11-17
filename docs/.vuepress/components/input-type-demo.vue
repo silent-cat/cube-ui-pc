@@ -1,10 +1,10 @@
 <template>
     <div>
-        <c-input type="password" placeholder="password"></c-input>
-        <c-input type="time"></c-input>
-        <c-input type="date"></c-input>
-        <c-input type="search" placeholder="可清空"></c-input>
-        <c-input type="week"></c-input>
+        <wy-input type="password" placeholder="password"></wy-input>
+        <wy-input type="time"></wy-input>
+        <wy-input type="date"></wy-input>
+        <wy-input type="search" placeholder="可清空"></wy-input>
+        <wy-input type="week"></wy-input>
     </div>
 </template>
 
@@ -12,7 +12,7 @@
 import Input from '../../../src/Input'
 export default {
  components:{
-     'c-input':Input
+     'wy-input':Input
  },
 }
 </script>

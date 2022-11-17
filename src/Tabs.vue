@@ -8,7 +8,7 @@
   import Vue from 'vue'
 
   export default {
-    name: 'CubeTabs',
+    name: 'WYTabs',
     props: {
       selected: {
         type: String,
@@ -30,9 +30,9 @@
       },
       selectTab () {
         this.$children.forEach((vm) => {
-          if (vm.$options.name === 'CubeTabsHead') {
+          if (vm.$options.name === 'WYTabsHead') {
             vm.$children.forEach((childVm) => {
-              if (childVm.$options.name === 'CubeTabsItem'
+              if (childVm.$options.name === 'WYTabsItem'
                 && childVm.name === this.selected) {
                 this.eventBus.$emit('update:selected', this.selected, childVm)
               }

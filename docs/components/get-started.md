@@ -3,11 +3,11 @@
 ## 安装
 
 ```bash
-npm install cube-ui-pc
+npm install wy-ui-vue2
 ```
 或
 ```bash
-yarn add cube-ui-pc
+yarn add wy-ui-vue2
 ```
 
 ## 使用
@@ -33,35 +33,23 @@ import {
     Toast,
     plugin,
     Popover,
-    Input,
-    Container,
-    Header,
-    Content,
-    Footer,
-    Aside
-    }  from "cube-ui-pc"; // 引入组件
-import "cube-ui-pc/dist/index.css"; // 引入样式
-Vue.component('c-button', Button)
-Vue.component('c-button-group', ButtonGroup)
-Vue.component('c-icon', Icon)
-Vue.component('c-switch', Switch)
-Vue.component('c-collapse', Collapse)
-Vue.component('c-collapse-item', CollapseItem)
-Vue.component('c-input', Input)
-Vue.component('c-col', Col)
-Vue.component('c-row', Row)
-Vue.component('c-tabs', Tabs)
-Vue.component('c-tabs-body', TabsBody)
-Vue.component('c-tabs-head', TabsHead)
-Vue.component('c-tabs-item', TabsItem)
-Vue.component('c-tabs-panel', TabsPanel)
-Vue.component('c-pagination', Pagination)
-Vue.component('c-toast',Toast)
+    }  from "wy-ui-vue2"; // 引入组件
+import "wy-ui-vue2/dist/index.css"; // 引入样式
+Vue.component('wy-button', Button)
+Vue.component('wy-button-group', ButtonGroup)
+Vue.component('wy-switch', Switch)
+Vue.component('wy-collapse', Collapse)
+Vue.component('wy-collapse-item', CollapseItem)
+Vue.component('wy-icon', Icon)
+Vue.component('wy-row', Row)
+Vue.component('wy-col', Col)
+Vue.component('wy-pagination', Pagination)
+Vue.component('wy-tabs', Tabs)
+Vue.component('wy-tabs-head', TabsHead)
+Vue.component('wy-tabs-body', TabsBody)
+Vue.component('wy-tabs-item', TabsItem)
+Vue.component('wy-tabs-panel', TabsPanel)
+Vue.component('wy-toast',Toast)
 Vue.use(plugin)
-Vue.component('c-popover',Popover)
-Vue.component('c-container',Container)
-Vue.component('c-header',Header)
-Vue.component('c-content',Content)
-Vue.component('c-footer',Footer)
-Vue.component('c-aside',Aside)
+Vue.component('wy-popover',Popover)
 ```

@@ -1,17 +1,17 @@
 <template>
   <div class="align-wrapper">
-    <c-row class="row" align="left">
-      <c-col class="item" span="8">left</c-col>
-      <c-col class="item" span="8">left</c-col>
-    </c-row>
-    <c-row class="row" align="center">
-      <c-col class="item" span="8">center</c-col>
-      <c-col class="item" span="8">center</c-col>
-    </c-row>
-    <c-row class="row" align="right">
-      <c-col class="item" span="8">right</c-col>
-      <c-col class="item" span="8">right</c-col>
-    </c-row>
+    <wy-row class="row" align="left">
+      <wy-col class="item" span="8">left</wy-col>
+      <wy-col class="item" span="8">left</wy-col>
+    </wy-row>
+    <wy-row class="row" align="center">
+      <wy-col class="item" span="8">center</wy-col>
+      <wy-col class="item" span="8">center</wy-col>
+    </wy-row>
+    <wy-row class="row" align="right">
+      <wy-col class="item" span="8">right</wy-col>
+      <wy-col class="item" span="8">right</wy-col>
+    </wy-row>
   </div>
 </template>
 
@@ -21,8 +21,8 @@
 
   export default {
     components: {
-      'c-col': Col,
-      'c-row': Row
+      'wy-col': Col,
+      'wy-row': Row
     },
   }
 </script>

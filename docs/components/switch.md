@@ -9,7 +9,7 @@
 </ClientOnly>
 
 ```vue
-    <c-switch v-model="value"></c-switch>
+    <wy-switch v-model="value"></wy-switch>
     <script>
         export default {
             data() {
@@ -29,8 +29,8 @@
 </ClientOnly>
 
 ```vue
-    <c-switch disabled></c-switch>
-    <c-switch disabled v-model="value"></c-switch>
+    <wy-switch disabled></wy-switch>
+    <wy-switch disabled v-model="value"></wy-switch>
     <script>
         export default {
             data(){
@@ -49,7 +49,7 @@ active-color 属性表示打开时的背景色，inactive-color 表示关闭时�
 </ClientOnly>
 
 ```vue
-    <c-switch v-model="checked" active-color="#ee0a24" inactive-color="#dcdee0"></c-switch>
+    <wy-switch v-model="checked" active-color="#ee0a24" inactive-color="#dcdee0"></wy-switch>
 ```
 ### Switch 属性
 | 参数              | 说明             | 类型    | 可选值                   | 默认值  |

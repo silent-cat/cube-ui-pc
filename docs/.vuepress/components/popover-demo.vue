@@ -1,23 +1,23 @@
 <template>
   <div class="popover-wrapper">
-    <c-popover position="left">
+    <wy-popover position="left">
       <template slot="content">
         popover 中的内容
       </template>
-      <c-button>左方</c-button>
-    </c-popover>
-    <c-popover>
-      <c-button>click</c-button>
+      <wy-button>左方</wy-button>
+    </wy-popover>
+    <wy-popover>
+      <wy-button>click</wy-button>
       <template slot="content">
         popover 中的内容
       </template>
-    </c-popover>
-    <c-popover trigger="hover">
+    </wy-popover>
+    <wy-popover trigger="hover">
       <template slot="content">
         popover 中的内容
       </template>
-      <c-button>hover</c-button>
-    </c-popover>
+      <wy-button>hover</wy-button>
+    </wy-popover>
   </div>
 </template>
 
@@ -27,8 +27,8 @@
 
   export default {
     components:{
-      'c-popover':Popover,
-      'c-button': Button
+      'wy-popover':Popover,
+      'wy-button': Button
     }
   }
 </script>

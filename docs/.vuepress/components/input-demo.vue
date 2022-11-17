@@ -1,6 +1,6 @@
 <template>
     <div>
-        <c-input v-model="value" placeholder="请输入内容"></c-input>
+        <wy-input v-model="value" placeholder="请输入内容"></wy-input>
     </div>
 </template>
 
@@ -8,7 +8,7 @@
 import Input from '../../../src/Input'
 export default {
  components:{
-     'c-input':Input
+     'wy-input':Input
  },
  data(){
      return {

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <c-button size="primary" loading>加载中</c-button>
+    <wy-button size="primary" loading>加载中</wy-button>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import Button from '../../../src/Button'
 export default {
   components: {
-    'c-button': Button
+    'wy-button': Button
   },
   methods: {},
   data() {

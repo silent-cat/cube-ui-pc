@@ -1,23 +1,23 @@
 <template>
   <div class="grid-wrapper">
-    <c-row class="row">
-      <c-col class="item" span="24">col-24</c-col>
-    </c-row>
-    <c-row class="row">
-      <c-col class="item" span="12">col-12</c-col>
-      <c-col class="item" span="12">col-12</c-col>
-    </c-row>
-    <c-row class="row">
-      <c-col class="item" span="8">col-8</c-col>
-      <c-col class="item" span="8">col-8</c-col>
-      <c-col class="item" span="8">col-8</c-col>
-    </c-row>
-    <c-row class="row">
-      <c-col class="item" span="6">col-6</c-col>
-      <c-col class="item" span="6">col-6</c-col>
-      <c-col class="item" span="6">col-6</c-col>
-      <c-col class="item" span="6">col-6</c-col>
-    </c-row>
+    <wy-row class="row">
+      <wy-col class="item" span="24">col-24</wy-col>
+    </wy-row>
+    <wy-row class="row">
+      <wy-col class="item" span="12">col-12</wy-col>
+      <wy-col class="item" span="12">col-12</wy-col>
+    </wy-row>
+    <wy-row class="row">
+      <wy-col class="item" span="8">col-8</wy-col>
+      <wy-col class="item" span="8">col-8</wy-col>
+      <wy-col class="item" span="8">col-8</wy-col>
+    </wy-row>
+    <wy-row class="row">
+      <wy-col class="item" span="6">col-6</wy-col>
+      <wy-col class="item" span="6">col-6</wy-col>
+      <wy-col class="item" span="6">col-6</wy-col>
+      <wy-col class="item" span="6">col-6</wy-col>
+    </wy-row>
   </div>
 </template>
 
@@ -53,8 +53,8 @@ import Row from '../../../src/Row'
 
 export default {
   components: {
-    'c-col': Col,
-    'c-row': Row
+    'wy-col': Col,
+    'wy-row': Row
   }
 }
 </script>

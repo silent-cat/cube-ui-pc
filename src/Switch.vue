@@ -1,6 +1,6 @@
 <template>
   <button
-    :class="['cube-switch',{ 'cube-switch-checked': value}]"
+    :class="['wy-switch',{ 'wy-switch-checked': value}]"
     @click="toggle"
     :style="{background:value?activeColor:inactiveColor}"
   >
@@ -36,7 +36,7 @@ export default {
 $height: 32px;
 $width: 84px;
 $bg: #fff;
-.cube-switch {
+.wy-switch {
   position: relative;
   height: $height;
   width: $width;

@@ -1,56 +1,56 @@
 <template>
-  <ul class="cube-pagination">
-    <c-button
-      :class="['cube-pagination-item', 'cube-pagination-item--prev']"
+  <ul class="wy-pagination">
+    <wy-button
+      :class="['wy-pagination-item', 'wy-pagination-item--prev']"
       :disabled="index === 1"
       @click="prev"
       icon="left"
     >
-    </c-button>
-    <c-button
-      :class="['cube-pagination-item', 'cube-pagination-item--first']"
+    </wy-button>
+    <wy-button
+      :class="['wy-pagination-item', 'wy-pagination-item--first']"
       :disabled="index === 1"
       @click="first"
     >
       首页
-    </c-button>
-    <c-button
-      :class="['cube-pagination-item', 'cube-pagination-item--more']"
+    </wy-button>
+    <wy-button
+      :class="['wy-pagination-item', 'wy-pagination-item--more']"
       v-if="showPrevMore"
     >
       ...
-    </c-button>
-    <c-button
+    </wy-button>
+    <wy-button
       :class="[
-        'cube-pagination-item',
-        { 'cube-pagination-item--current': index === pager }
+        'wy-pagination-item',
+        { 'wy-pagination-item--current': index === pager }
       ]"
       v-for="pager in pagers"
       @click="go(pager)"
     >
       {{ pager }}
-    </c-button>
-    <c-button
-      :class="['cube-pagination-item', 'cube-pagination-item--more']"
+    </wy-button>
+    <wy-button
+      :class="['wy-pagination-item', 'wy-pagination-item--more']"
       v-if="showNextMore"
     >
       ...
-    </c-button>
-    <c-button
-      :class="['cube-pagination-item', 'cube-pagination-item--last']"
+    </wy-button>
+    <wy-button
+      :class="['wy-pagination-item', 'wy-pagination-item--last']"
       :disabled="index === pages"
       @click="last"
     >
       尾页
-    </c-button>
-    <c-button
-      :class="['cube-pagination-item', 'cube-pagination-item--next']"
+    </wy-button>
+    <wy-button
+      :class="['wy-pagination-item', 'wy-pagination-item--next']"
       :disabled="index === pages"
       @click="next"
       icon="right"
       position="right"
     >
-    </c-button>
+    </wy-button>
   </ul>
 </template>
 <script>
@@ -59,9 +59,9 @@ import ButtonGroup from './ButtonGroup'
 import Icon from './Icon'
 export default {
   components: {
-    'c-button': Button,
-    'c-button-group': ButtonGroup,
-    'c-icon': Icon
+    'wy-button': Button,
+    'wy-button-group': ButtonGroup,
+    'wy-icon': Icon
   },
   //通过props来接受从父组件传递过来的值
   props: {
@@ -182,8 +182,8 @@ export default {
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
-.cube-pagination {
-  > .cube-pagination-item {
+.wy-pagination {
+  > .wy-pagination-item {
     background-color: #f4f4f5;
     color: #2c3e50;
     margin-left: 0.2rem;
@@ -202,17 +202,17 @@ export default {
     &:last-child {
       margin-left: 0;
     }
-    &.cube-pagination-item--more {
+    &.wy-pagination-item--more {
       background-color: #fff;
       color: #505050;
     }
     //禁用
-    &.cube-pagination-item--more,
-    &.cube-pagination-item--current {
+    &.wy-pagination-item--more,
+    &.wy-pagination-item--current {
       cursor: default;
     }
     //选中
-    &.cube-pagination-item--current {
+    &.wy-pagination-item--current {
       background-color: #409eff;
       color: #fff;
     }

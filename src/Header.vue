@@ -1,5 +1,5 @@
 <template>
-  <header class="cube-container-header">
+  <header class="wy-container-header">
     <slot></slot>
   </header>
 </template>
@@ -9,7 +9,7 @@ export default {}
 </script>
 
 <style lang="scss">
-.cube-container-header {
+.wy-container-header {
   height: 4rem;
   line-height: 4rem;
   background-color: #65b2ff;

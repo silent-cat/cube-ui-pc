@@ -1,6 +1,6 @@
 <template>
   <div>
-    <c-switch v-model="value"></c-switch>
+    <wy-switch v-model="value"></wy-switch>
     <p>switch value: {{value}}</p>
   </div>
 </template>
@@ -9,7 +9,7 @@
 import Switch from '../../../src/Switch'
 export default {
   components: {
-    'c-switch': Switch
+    'wy-switch': Switch
   },
   data() {
     return {

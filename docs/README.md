@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /logo.png
-heroText: Cube UI 官网
-tagline: 基于 Vue.js2.0 实现的桌面端组件库
+heroText: 物语UI 官网
+tagline: 一款 Vue2 组件库
 actionText: 快速上手 →
 actionLink: /components/get-started
 features:

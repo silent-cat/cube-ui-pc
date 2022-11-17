@@ -17,7 +17,7 @@
             margin: 100px;
         }
 
-        c-button {
+        wy-button {
             margin: 10px;
         }
     </style>
@@ -26,185 +26,155 @@
 <body>
     <div id="app">
         <div class="box">
-            <c-link></c-link>
-        </div>
-        <div class="box">
-            <c-layout>
-                <c-aside>aside</c-aside>
-                <c-layout>
-                  <c-header>header</c-header>
-                  <c-content>content</c-content>
-                  <c-footer>footer</c-footer>
-                </c-layout>
-            </c-layout>
-        </div>
-        <div class="box">
-            <c-popover position="bottom">
+            <wy-popover position="bottom">
                 <template slot="content">
                     popover 中的内容
                 </template>
-                <c-button>下方显示内容</c-button>
-            </c-popover>
-            <c-popover>
+                <wy-button>下方显示内容</wy-button>
+            </wy-popover>
+            <wy-popover>
                 <template slot="content">
                     popover 中的内容
                 </template>
-                <c-button>点击显示</c-button>
-            </c-popover>
-            <c-popover trigger="hover">
+                <wy-button>点击显示</wy-button>
+            </wy-popover>
+            <wy-popover trigger="hover">
                 <template slot="content">
                     popover 中的内容
                 </template>
-                <c-button>hover 显示内容</c-button>
-            </c-popover>
+                <wy-button>hover 显示内容</wy-button>
+            </wy-popover>
         </div>
         <div class="box">
-            <c-button @click="showToast">按钮</c-button>
+            <wy-button @click="showToast">按钮</wy-button>
         </div>
+
         <div class="box">
-            <c-calendar :sel-list="list" :cur-sel='curSel' :sel-mode='selMode' />
-        </div>
-        <div class="box">
-            <!-- <div class="list">
+            <div class="list">
                 <template v-if="count">
                     <ul>
                         <li v-for="item in items">...</li>
                     </ul>
-                    <c-pagination :page-index="currentPage" :total="count" :page-size="pageSize" @change="pageChange">
-                    </c-pagination>
+                    <wy-pagination :page-index="currentPage" :total="count" :page-size="pageSize" @change="pageChange">
+                    </wy-pagination>
                 </template>
-            </div> -->
+            </div>
 
         </div>
         <div class="box">
-            <c-tabs :selected.sync="selectedTab">
-                <c-tabs-head>
-                    <c-tabs-item name='tab1'>
+            <wy-tabs :selected.sync="selectedTab">
+                <wy-tabs-head>
+                    <wy-tabs-item name='tab1'>
                         Tab1
-                    </c-tabs-item>
-                    <c-tabs-item name='tab2'>Tab2123123</c-tabs-item>
-                    <c-tabs-item name='tab3'>Tab3</c-tabs-item>
-                    <c-tabs-item name='tab4'>Tab4</c-tabs-item>
-                </c-tabs-head>
-                <c-tabs-body>
-                    <c-tabs-panel name='tab1'>内容1</c-tabs-panel>
-                    <c-tabs-panel name='tab2'>内容2</c-tabs-panel>
-                    <c-tabs-panel name='tab3'>内容3</c-tabs-panel>
-                    <c-tabs-panel name='tab4'>内容4</c-tabs-panel>
-                </c-tabs-body>
-            </c-tabs>
+                    </wy-tabs-item>
+                    <wy-tabs-item name='tab2'>Tab2123123</wy-tabs-item>
+                    <wy-tabs-item name='tab3'>Tab3</wy-tabs-item>
+                    <wy-tabs-item name='tab4'>Tab4</wy-tabs-item>
+                </wy-tabs-head>
+                <wy-tabs-body>
+                    <wy-tabs-panel name='tab1'>内容1</wy-tabs-panel>
+                    <wy-tabs-panel name='tab2'>内容2</wy-tabs-panel>
+                    <wy-tabs-panel name='tab3'>内容3</wy-tabs-panel>
+                    <wy-tabs-panel name='tab4'>内容4</wy-tabs-panel>
+                </wy-tabs-body>
+            </wy-tabs>
         </div>
         <div class="box">
             <div class="grid-wrapper">
-                <c-row class="row">
-                    <c-col class="item" span="24">col-24</c-col>
-                </c-row>
-                <c-row>
-                    <c-col class="item" span="12">col-12</c-col>
-                    <c-col class="item" span="12">col-12</c-col>
-                </c-row>
-                <c-row class="row">
-                    <c-col class="item" span="8">col-8</c-col>
-                    <c-col class="item" span="8">col-8</c-col>
-                    <c-col class="item" span="8">col-8</c-col>
-                </c-row>
-                <c-row class="row">
-                    <c-col class="item" span="6">col-6</c-col>
-                    <c-col class="item" span="6">col-6</c-col>
-                    <c-col class="item" span="6">col-6</c-col>
-                    <c-col class="item" span="6">col-6</c-col>
-                </c-row>
+                <wy-row class="row">
+                    <wy-col class="item" span="24">col-24</wy-col>
+                </wy-row>
+                <wy-row>
+                    <wy-col class="item" span="12">col-12</wy-col>
+                    <wy-col class="item" span="12">col-12</wy-col>
+                </wy-row>
+                <wy-row class="row">
+                    <wy-col class="item" span="8">col-8</wy-col>
+                    <wy-col class="item" span="8">col-8</wy-col>
+                    <wy-col class="item" span="8">col-8</wy-col>
+                </wy-row>
+                <wy-row class="row">
+                    <wy-col class="item" span="6">col-6</wy-col>
+                    <wy-col class="item" span="6">col-6</wy-col>
+                    <wy-col class="item" span="6">col-6</wy-col>
+                    <wy-col class="item" span="6">col-6</wy-col>
+                </wy-row>
             </div>
         </div>
         <div class="box">
-            <c-input v-model="value1" placeholder="同步输入框"></c-input>
-            <br>
-            <c-input :value="value1" placeholder="同步输入框"></c-input>
-            <br>
-            <c-input value="触发focus事件" @focus="fn"></c-input>
-            <br>
-            <c-input value="触发blur事件" @blur="fn"></c-input>
-            <br>
-            <c-input disabled value="禁用"></c-input>
-            <br>
-            <c-input readonly value="只读"></c-input>
-            <c-input type="time" value="只读"></c-input>
-
-        </div>
-        <div class="box">
             <h2>按钮组</h2>
-            <c-button-group>
-                <c-button icon="left">上一页</c-button>
-                <c-button icon="right" icon-position="right">下一页</c-button>
-            </c-button-group>
-            <c-button-group>
-                <c-button icon="addto">添加</c-button>
-                <c-button icon="delete">删除</c-button>
-                <c-button icon="edit">编辑</c-button>
-            </c-button-group>
-            <c-button-group>
+            <wy-button-group>
+                <wy-button icon="left">上一页</wy-button>
+                <wy-button icon="right" icon-position="right">下一页</wy-button>
+            </wy-button-group>
+            <wy-button-group>
+                <wy-button icon="addto">添加</wy-button>
+                <wy-button icon="delete">删除</wy-button>
+                <wy-button icon="edit">编辑</wy-button>
+            </wy-button-group>
+            <wy-button-group>
                 <div>1</div>
                 <div>1</div>
                 <div>1</div>
-            </c-button-group>
+            </wy-button-group>
         </div>
         <div class="box">
-            <c-icon name="edit"></c-icon>
+            <wy-icon name="edit"></wy-icon>
         </div>
         <div class="box">
-            <c-collapse :selected.sync="selected" single>
-                <c-collapse-item title="糖果" name="1">
+            <wy-collapse :selected.sync="selected" single>
+                <wy-collapse-item title="糖果" name="1">
                     <p>软糖</p>
                     <p>话梅糖</p>
                     <p>奶糖</p>
-                </c-collapse-item>
-                <c-collapse-item title="动漫" name="2">
+                </wy-collapse-item>
+                <wy-collapse-item title="动漫" name="2">
                     <p>死亡笔记</p>
                     <p>黑礁</p>
                     <p>斩服少女</p>
-                </c-collapse-item>
-                <c-collapse-item title="水果" name="3">
+                </wy-collapse-item>
+                <wy-collapse-item title="水果" name="3">
                     <p>橘子</p>
                     <p>西瓜</p>
                     <p>菠萝</p>
-                </c-collapse-item>
-            </c-collapse>
+                </wy-collapse-item>
+            </wy-collapse>
         </div>
         <div class="box">
             <h3>Switch</h3>
-            <c-switch v-model:value="checked"></c-switch>
+            <wy-switch v-model:value="checked"></wy-switch>
             <span>{{checked}}</span>
-            <c-switch disabled></c-switch>
-            <c-switch v-model:value="checked1" disabled></c-switch>
+            <wy-switch disabled></wy-switch>
+            <wy-switch v-model:value="checked1" disabled></wy-switch>
 
         </div>
         <div class="box">
             <h3>Button</h3>
-            <c-button @click="f1">点击</c-button>
+            <wy-button @click="f1">点击</wy-button>
             <br>
             <br>
-            <c-button disabled>禁用</c-button>
+            <wy-button disabled>禁用</wy-button>
             <br>
             <br>
-            <c-button size="small">小型按钮</c-button>
-            <c-button>中型按钮</c-button>
-            <c-button size="large">大型按钮</c-button>
+            <wy-button size="small">小型按钮</wy-button>
+            <wy-button>中型按钮</wy-button>
+            <wy-button size="large">大型按钮</wy-button>
             <br>
             <br>
-            <c-button circle size="small">小圆</c-button>
-            <c-button circle>中圆</c-button>
-            <c-button circle size="large">大圆</c-button>
+            <wy-button circle size="small">小圆</wy-button>
+            <wy-button circle>中圆</wy-button>
+            <wy-button circle size="large">大圆</wy-button>
             <br>
             <br>
-            <c-button type="primary">主要</c-button>
-            <c-button type="success">成功</c-button>
-            <c-button type="info">信息</c-button>
-            <c-button type="warning">警告</c-button>
-            <c-button type="danger">危险</c-button>
+            <wy-button type="primary">主要</wy-button>
+            <wy-button type="success">成功</wy-button>
+            <wy-button type="info">信息</wy-button>
+            <wy-button type="warning">警告</wy-button>
+            <wy-button type="danger">危险</wy-button>
             <br>
             <br>
-            <c-button type="danger" icon="edit" icon-position="right">危险</c-button>
-            <c-button type="danger" loading>危险</c-button>
+            <wy-button type="danger" icon="edit" icon-position="right">危险</wy-button>
+            <wy-button type="danger" loading>危险</wy-button>
 
 
         </div>

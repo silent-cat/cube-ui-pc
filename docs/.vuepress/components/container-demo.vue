@@ -1,10 +1,10 @@
 <template>
   <div>
-    <c-container>
-      <c-header>header</c-header>
-      <c-content>content</c-content>
-      <c-footer>footer</c-footer>
-    </c-container>
+    <wy-container>
+      <wy-header>header</wy-header>
+      <wy-content>content</wy-content>
+      <wy-footer>footer</wy-footer>
+    </wy-container>
   </div>
 </template>
 
@@ -16,11 +16,11 @@ import Aside from '../../../src/Aside'
 import Container from '../../../src/Container'
 export default {
   components: {
-    'c-aside': Aside,
-    'c-header': Header,
-    'c-content': Content,
-    'c-footer': Footer,
-    'c-container': Container
+    'wy-aside': Aside,
+    'wy-header': Header,
+    'wy-content': Content,
+    'wy-footer': Footer,
+    'wy-container': Container
   }
 }
 </script>

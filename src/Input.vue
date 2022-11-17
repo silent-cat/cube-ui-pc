@@ -1,6 +1,6 @@
 <template>
-  <!-- <div class="cube-input-wrapper" :class="{ error }"> -->
-  <div class="cube-input-wrapper">
+  <!-- <div class="wy-input-wrapper" :class="{ error }"> -->
+  <div class="wy-input-wrapper">
     <label>
       <input
         :value="value"
@@ -13,8 +13,8 @@
         @blur="$emit('blur', $event.target.value)"
       />
       <!-- <template v-if="error">
-        <Icon class="cube-icon-error" name="error"></Icon>
-        <span class="cube-error-message">{{ error }}</span>
+        <Icon class="wy-icon-error" name="error"></Icon>
+        <span class="wy-error-message">{{ error }}</span>
       </template> -->
     </label>
   </div>
@@ -59,7 +59,7 @@ $border-color-hover: #409eff;
 $border-radius: 4px;
 $font-size: 14px;
 $red: #f1453d;
-.cube-input-wrapper {
+.wy-input-wrapper {
   font-size: $font-size;
   display: inline-block;
   align-items: center;
@@ -101,11 +101,11 @@ $red: #f1453d;
         border-color: $red;
       }
 
-      .cube-icon-error {
+      .wy-icon-error {
         fill: $red;
       }
 
-      .cube-error-message {
+      .wy-error-message {
         color: $red;
       }
     }

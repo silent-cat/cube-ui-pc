@@ -10,20 +10,20 @@
 </ClientOnly>
 
 ```vue
-  <c-tabs :selected.sync="selectedTab">
-    <c-tabs-head>
-      <c-tabs-item name="tab1">Tab1</c-tabs-item>
-      <c-tabs-item name="tab2">Tab2</c-tabs-item>
-      <c-tabs-item name="tab3" disabled>Tab3</c-tabs-item>
-      <c-tabs-item name="tab4">Tab4</c-tabs-item>
-    </c-tabs-head>
-    <c-tabs-body>
-      <c-tabs-panel name="tab1">内容1</c-tabs-panel>
-      <c-tabs-panel name="tab2">内容2</c-tabs-panel>
-      <c-tabs-panel name="tab3">内容3</c-tabs-panel>
-      <c-tabs-panel name="tab4">内容4</c-tabs-panel>
-    </c-tabs-body>
-  </c-tabs>
+  <wy-tabs :selected.sync="selectedTab">
+    <wy-tabs-head>
+      <wy-tabs-item name="tab1">Tab1</wy-tabs-item>
+      <wy-tabs-item name="tab2">Tab2</wy-tabs-item>
+      <wy-tabs-item name="tab3" disabled>Tab3</wy-tabs-item>
+      <wy-tabs-item name="tab4">Tab4</wy-tabs-item>
+    </wy-tabs-head>
+    <wy-tabs-body>
+      <wy-tabs-panel name="tab1">内容1</wy-tabs-panel>
+      <wy-tabs-panel name="tab2">内容2</wy-tabs-panel>
+      <wy-tabs-panel name="tab3">内容3</wy-tabs-panel>
+      <wy-tabs-panel name="tab4">内容4</wy-tabs-panel>
+    </wy-tabs-body>
+  </wy-tabs>
 
   <script>
   export default {

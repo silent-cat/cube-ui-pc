@@ -1,6 +1,6 @@
 <template>
   <div>
-    <c-button @click="clickEvent">点击</c-button>
+    <wy-button @click="clickEvent">点击</wy-button>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 import Button from '../../../src/Button'
 export default {
   components: {
-    'c-button': Button
+    'wy-button': Button
   },
   methods: {
     clickEvent() {

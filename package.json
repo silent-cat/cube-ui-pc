@@ -1,8 +1,8 @@
 {
-  "name": "cube-ui-pc",
+  "name": "wy-ui-vue2",
   "version": "0.0.3",
   "main": "dist/index.js",
-  "repository": "git@github.com:silent-cat/cube-ui-pc.git",
+  "repository": "git@github.com:silent-cat/wy-ui-vue2.git",
   "author": "silent-cat",
   "license": "MIT",
   "scripts": {
@@ -13,6 +13,7 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
+    "vue-server-renderer": "2.7.14",
     "vue-template-compiler": "^2.7.14"
   },
   "devDependencies": {

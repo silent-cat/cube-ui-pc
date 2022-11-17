@@ -1,8 +1,8 @@
 <template>
   <div>
-    <c-button @click="showToast('top')">上方显示</c-button>
-    <c-button @click="showToast('center')">中间显示</c-button>
-    <c-button @click="showToast('bottom')">下方显示</c-button>
+    <wy-button @click="showToast('top')">上方显示</wy-button>
+    <wy-button @click="showToast('center')">中间显示</wy-button>
+    <wy-button @click="showToast('bottom')">下方显示</wy-button>
   </div>
 </template>
 
@@ -14,8 +14,8 @@ import plugin from '../../../src/plugin'
 Vue.use(plugin)
 export default {
   components: {
-    'c-button': Button,
-    'c-toast': Toast
+    'wy-button': Button,
+    'wy-toast': Toast
   },
   methods: {
     showToast(position) {

@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'CubeTabsPanel',
+    name: 'WYTabsPanel',
     inject: ['eventBus'],
     props: {
       name: {

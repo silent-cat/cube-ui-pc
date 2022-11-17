@@ -1,20 +1,20 @@
 <template>
   <div class="gutter-wrapper">
-    <c-row gutter="30">
-      <c-col class="item" span="8"> <span> col-8; gutter-30;</span> </c-col>
-      <c-col class="item" span="8"> <span> col-8; gutter-30;</span> </c-col>
-      <c-col class="item" span="8"> <span> col-8; gutter-30;</span> </c-col>
-    </c-row>
-    <c-row gutter="20">
-      <c-col class="item" span="8"> <span> col-8; gutter-20;</span> </c-col>
-      <c-col class="item" span="8"> <span> col-8; gutter-20;</span> </c-col>
-      <c-col class="item" span="8"> <span> col-8; gutter-20;</span> </c-col>
-    </c-row>
-    <c-row gutter="10">
-      <c-col class="item" span="8"> <span> col-8; gutter-10;</span> </c-col>
-      <c-col class="item" span="8"> <span> col-8; gutter-10;</span> </c-col>
-      <c-col class="item" span="8"> <span> col-8; gutter-10;</span> </c-col>
-    </c-row>
+    <wy-row gutter="30">
+      <wy-col class="item" span="8"> <span> col-8; gutter-30;</span> </wy-col>
+      <wy-col class="item" span="8"> <span> col-8; gutter-30;</span> </wy-col>
+      <wy-col class="item" span="8"> <span> col-8; gutter-30;</span> </wy-col>
+    </wy-row>
+    <wy-row gutter="20">
+      <wy-col class="item" span="8"> <span> col-8; gutter-20;</span> </wy-col>
+      <wy-col class="item" span="8"> <span> col-8; gutter-20;</span> </wy-col>
+      <wy-col class="item" span="8"> <span> col-8; gutter-20;</span> </wy-col>
+    </wy-row>
+    <wy-row gutter="10">
+      <wy-col class="item" span="8"> <span> col-8; gutter-10;</span> </wy-col>
+      <wy-col class="item" span="8"> <span> col-8; gutter-10;</span> </wy-col>
+      <wy-col class="item" span="8"> <span> col-8; gutter-10;</span> </wy-col>
+    </wy-row>
   </div>
 </template>
 
@@ -24,8 +24,8 @@ import Row from '../../../src/Row'
 
 export default {
   components: {
-    'c-col': Col,
-    'c-row': Row
+    'wy-col': Col,
+    'wy-row': Row
   }
 }
 </script>

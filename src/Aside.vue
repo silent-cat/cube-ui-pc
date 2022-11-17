@@ -1,5 +1,5 @@
 <template>
-  <main class="cube-container-aside">
+  <main class="wy-container-aside">
     <slot></slot>
   </main>
 </template>
@@ -9,7 +9,7 @@ export default {}
 </script>
 
 <style lang="scss">
-.cube-container-aside {
+.wy-container-aside {
   width: 12rem;
   line-height: 12rem;
   background: #3399ff;

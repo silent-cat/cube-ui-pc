@@ -1,20 +1,20 @@
 <template>
   <div class="offset-wrapper">
-    <c-row class="row">
-      <c-col class="item" span="8"> <span>col-8</span> </c-col>
-      <c-col class="item" span="8"> <span>col-8</span> </c-col>
-      <c-col class="item" span="4" offset="4"> <span>col-4</span> </c-col>
-    </c-row>
-    <c-row class="row">
-      <c-col class="item" span="8"> <span>col-8</span> </c-col>
-      <c-col class="item" span="5" offset="3"> <span>col-5</span> </c-col>
-      <c-col class="item" span="4" offset="4"> <span>col-4</span> </c-col>
-    </c-row>
-    <c-row class="row">
-      <c-col class="item" span="2" offset="6"> <span>col-2</span> </c-col>
-      <c-col class="item" span="5" offset="3"> <span>col-5</span> </c-col>
-      <c-col class="item" span="4" offset="4"> <span>col-4</span> </c-col>
-    </c-row>
+    <wy-row class="row">
+      <wy-col class="item" span="8"> <span>col-8</span> </wy-col>
+      <wy-col class="item" span="8"> <span>col-8</span> </wy-col>
+      <wy-col class="item" span="4" offset="4"> <span>col-4</span> </wy-col>
+    </wy-row>
+    <wy-row class="row">
+      <wy-col class="item" span="8"> <span>col-8</span> </wy-col>
+      <wy-col class="item" span="5" offset="3"> <span>col-5</span> </wy-col>
+      <wy-col class="item" span="4" offset="4"> <span>col-4</span> </wy-col>
+    </wy-row>
+    <wy-row class="row">
+      <wy-col class="item" span="2" offset="6"> <span>col-2</span> </wy-col>
+      <wy-col class="item" span="5" offset="3"> <span>col-5</span> </wy-col>
+      <wy-col class="item" span="4" offset="4"> <span>col-4</span> </wy-col>
+    </wy-row>
   </div>
 </template>
 
@@ -24,8 +24,8 @@
 
   export default {
     components: {
-      'c-col': Col,
-      'c-row': Row
+      'wy-col': Col,
+      'wy-row': Row
     }
   }
 </script>

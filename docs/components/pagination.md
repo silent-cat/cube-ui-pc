@@ -11,13 +11,13 @@
       <ul>
         <li v-for="(item, index) in data" :key="index">{{ item.id }}</li>
       </ul>
-      <c-pagination
+      <wy-pagination
         :page-number="pageNumber"
         :total="total"
         :page-size="pageSize"
         @change="pageChange"
       >
-      </c-pagination>
+      </wy-pagination>
   </template>
 
   <script>
