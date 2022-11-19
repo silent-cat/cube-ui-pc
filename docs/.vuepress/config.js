@@ -1,5 +1,5 @@
 module.exports = {
-  base:'/wy-ui-vue2/docs/.vuepress/dist/',
+  base:'/wy-ui-vue2/',
   title: '物语UI',
   description: '一个好用的组件库',
   themeConfig: {
